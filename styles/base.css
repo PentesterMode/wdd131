@@ -1,0 +1,118 @@
+:root{
+    --font-size: medium;
+    --color:solid black;
+    --background-color:orchid;
+}
+
+
+
+
+
+
+header{
+    background-color: orchid;
+    text-align: center;
+    padding: 1rem;
+    font-weight:bolder;
+}
+#course-title{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+nav{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    color: var(--color);
+}
+nav a{
+    text-decoration: none;
+    font-family: 1rem;
+    color: var(--color)
+}
+main h1{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color:orchid ;
+}
+.card-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap:6px;
+    padding:15px;
+
+}
+main{
+    flex-wrap: wrap;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 3px var(--color) ;
+    border-radius: 4px;
+    overflow: hidden;
+     flex: 1;
+     padding: 2rem;
+    
+}
+.card:first-child{
+    flex: 2 1 400px;
+}
+.card:last-child{
+    flex:1 1 250px;
+}
+.card h2{
+    background-color: orchid;
+    margin: 0;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+.card p,
+.card image,
+.card ul{
+    padding: 0 1 rem;
+}
+
+.card img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+.profile-picture{
+    float :left;
+    width: 100px;
+}
+.the-flag{
+    float:right;
+}
+.card h2.zim-heading{
+    background-color: white;
+    text-decoration: underline;
+    color:var(--color);
+}
+.web-photoo{
+    float: left;
+}
+.web-photo{
+    float:right;
+    height: 150px;
+}
+footer{
+    background-color:orchid ;
+    text-align: center;
+    padding: 1rem;
+    font-size: medium;
+}
+ul,
+li a{
+    color: var(--color-color);
+}
