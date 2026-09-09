@@ -3,7 +3,9 @@
     --color:solid black;
     --background-color:orchid;
 }
-
+body{
+    font-family:"Lato", sans-serif;
+}
 
 
 
@@ -28,9 +30,12 @@ nav{
     color: var(--color);
 }
 nav a{
+    color: var(--color);
     text-decoration: none;
-    font-family: 1rem;
-    color: var(--color)
+}
+nav a:hover{
+    text-decoration:underline;
+    color:darkorchid;
 }
 main h1{
     flex-basis: 100%;
@@ -40,8 +45,8 @@ main h1{
     background-color:orchid ;
 }
 .card-wrap{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap:6px;
     padding:15px;
 
@@ -59,12 +64,6 @@ main{
      flex: 1;
      padding: 2rem;
     
-}
-.card:first-child{
-    flex: 2 1 400px;
-}
-.card:last-child{
-    flex:1 1 250px;
 }
 .card h2{
     background-color: orchid;
@@ -114,5 +113,6 @@ footer{
 }
 ul,
 li a{
-    color: var(--color-color);
+    color: var(--color);
+
 }
