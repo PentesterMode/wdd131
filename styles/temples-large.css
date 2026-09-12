@@ -1,8 +1,5 @@
-nav{
-    flex-direction: row;
-    gap:2rem;
-
-}
+@media (min-width:768px) {
+    
 main{
     grid-template-columns: repeat(3, 1fr);
     max-width:1000px ;
@@ -15,5 +12,6 @@ nav{
     width: auto;
     margin-top: 0;
     gap:1.5rem;
-    display: flex !important;
+    display: flex;
+}
 }
