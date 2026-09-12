@@ -1,0 +1,20 @@
+header, main, footer{
+    max-width: 640px;
+    align-items: center;
+    margin: 1rem auto;
+    border:1px solid black;
+    padding :1rem;
+    background-color: aqua;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:1rem
+}
+section{
+    padding: 1rem;
+    background-color: aqua;
+}

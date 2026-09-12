@@ -1,0 +1,19 @@
+nav{
+    flex-direction: row;
+    gap:2rem;
+
+}
+main{
+    grid-template-columns: repeat(3, 1fr);
+    max-width:1000px ;
+}
+#hamburger-btn{
+    display:none;
+}
+nav{
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+    gap:1.5rem;
+    display: flex !important;
+}
