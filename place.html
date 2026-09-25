@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Place Trish has visited</title>
+    <meta name="description"
+      content="WDD 131 - Dynamic Web Fundamentals |Trish Chibira |This homepage is about the author of this page and web development resources available for this course.">
+    <meta name="author" content="Trish Chibira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+     <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<header>
+  <h1> Zimbabwe</h1>
+</header>
+<main>
+  <div class="hero">
+    <pic>
+     <source ="(min-width:700px)" srcset="images/kariba.jpg">
+     <img src ="images/kariba.jpg" alt="Zebras at Kariba Dam">
+     </pic>
+
+     <section class="card">
+      <h2>Data</h2>
+      <ul>
+        <li><span class="label">Area:</span> <span class="value">386850 sq. Km</span></li>
+        <li><span class="label">Popuation:</span> <span class="value">17,281,900</span></li>
+        <li><span class="label">Capital:</span> <span class="value">Harare</span></li>
+        <li><span class="label">Languages:</span> <span class="value"> Chewa, Shona</span></li>
+        <li><span class="label">Currency:</span> <span class="value">USD / ZIG</span></li>
+        <li><span class="label">Time Zone :</span> <span class="value">CAT</span></li>
+        <li><span class="label">Calling Code:</span> <span class="value">+263</span></li>
+        <li><span class="label">Internet TLD:</span> <span class="value"></span>.zw</li>
+      </ul>
+     </section>
+     <section class="weather">
+      <h2>Weather<span class="weather-icon">⛅</span>.zw</h2>
+      <ul>
+        <li><span class="label">Temperature:</span> <span class="value" id="temp">27</span>&deg;C</li>
+        <li><span class="label">Conditions:</span> <span class="value">Sunny</span></li>
+        <li><span class="label">Wind:</span> <span class="wind" id="wind">12km/hr</span></li>
+        <li><span class="label">Wind Chill</span>  <span class="value" id="chill">N/A</span>C</li>
+
+      </ul>
+     </section>
+ </div>
+</main>   
+<footer>
+   <p>©️ <span id="currentyear"></span>🌹Trish Chibira🌹Zimbabwe</p>
+        <p id="lastModified"></p>
+
+</footer>
+</body>
+</html>
