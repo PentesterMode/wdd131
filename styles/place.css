@@ -29,7 +29,7 @@ main{
 .hero{
     display: flex;
     flex-direction: column;
-    gap:1 rem;
+    gap:1rem;
 }
 .hero picture img{
     width: 100%;
@@ -37,9 +37,10 @@ main{
     display: block;
     border-radius:6px;
     object-fit: cover;
+
 }
 .card {
-    border: I1px solid black;
+    border: 1px solid black;
     border-radius: 8px;
     padding: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0.05);
@@ -58,7 +59,7 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 0.4rem 0;
-    border-bottom: 1px dashed solid black;
+    border-bottom: 1px black;
 }
 .card li:last-child{
     border-bottom: none;
@@ -70,8 +71,16 @@ footer{
     text-align: center;
     padding: 1.25rem;
     margin-top:2rem ;
-    font: size 0.9em; 
+    font-size:0.9em; 
     background-color: var(--primary-color);
+
+}
+.weather-icon{
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    stroke:aliceblue
 }
 @media(min-width: 700px){
     .hero{
