@@ -76,9 +76,14 @@ figure img{
 }
 #temple-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap:1.5rem;
     padding: 1rem;
+}
+@media (min-width: 600px){
+    #temple-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .temple-card {
     border: 1px solid black;
