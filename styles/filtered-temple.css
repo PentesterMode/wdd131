@@ -90,6 +90,10 @@ figure img{
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
+    width: 100%;
+    max-width: none;
+    
+    
      
 }
 .temple-card img{
