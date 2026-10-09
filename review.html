@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Submitted Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let count = Number(localStorage.getItem("reviewCount-ls")) || 0;
+            count++;
+            localStorage.setItem("reviewCount-ls",count);
+            document.getElementById("reviewCounter").textContent = count;
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main class="confirming-container">
+        <h2>Thank You!</h2>
+        <p>Your product review has been submitted successfully.</p>
+        <p>Number of reviews submitted: <strong id="reviewCounter">0</strong></p>
+        <a href="form.html" class="submit-btn text-center">Submit Another Review</a>
+    </main>
+    <footer>
+        <p>&copy; 2026 | WDD 131 | Product Review</p>
+    </footer>
+</body>
+</html>

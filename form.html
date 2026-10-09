@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Form Creation.</title>
+    <meta name="description"
+      content="WDD 131 - Dynamic Web Fundamentals |Trish Chibira | This homepage is about learning to create a form.">
+    <meta name="author" content="Trish Chibira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-item">
+                <label for="productName">Product Name <span class="required">*</span></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <fieldset class="rating-fieldset">
+                
+                    <legend>Overall Rating<span class="required">*</span></legend>
+                    <div class="rating-options">
+                        <label for="rating1">
+                            <span>&#9734;</span>
+                            <input type="radio" id="rating1" name="rating" value="1" required>
+                        </label>
+                        <label for="rating2">
+                            <span>&#9734;&#9734;</span>
+                            <input type="radio" id="rating2" name="rating" value="2" required>
+                        </label>
+                        <label for="rating3">
+                            <span>&#9734;&#9734;&#9734;</span>
+                            <input type="radio" id="rating3" name="rating" value="3" required>
+                        </label>
+                        <label for="rating4">
+                            <span>&#9734;&#9734;&#9734;&#9734;</span>
+                            <input type="radio" id="rating4" name="rating" value="4" required>
+                        </label>
+                        <label for="rating5">
+                            <span>&#9734;&#9734;&#9734;&#9734;&#9734;</span>
+                            <input type="radio" id="rating5" name="rating" value="5" required>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-item">
+                <label for="form-item">
+                    <label for="installDate">Date of Installation<span class="required">*</span></label>
+                    <input type="date" id="installDate" name="installDate" required>
+            </div>
+            <div class="form-item">
+                <fieldset>
+                    <legend>Which features did you find useful in the in the product? (Check all that apply)</legend>
+                    <div class="check-box"></div>
+                    <label for="durability"><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                    <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">Ease of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+                    <label for="design"><input type="checkbox" id="design" name="features" value="design">Design</label>
+                </fieldset>
+            </div>
+            <div class="form-item">
+                <label for="writtenReview">Written Review (Optional)</label>
+                <textarea id="writtenReview" name="writtenReview" rows="5"></textarea>
+            </div>
+            <div class="form-item">
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+
+
+            </div>
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | WDD 131 | Product Review</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
